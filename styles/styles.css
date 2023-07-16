@@ -6,10 +6,34 @@
     padding: 0;
 }
 
+.text-light-gray {
+    color: #727272;
+}
+
+.btn-primary {
+    width: 11.25rem;
+    height: 4rem;
+    border-radius: 0.500rem;
+    background: #FF900E;
+    color: #FFF;
+    padding: 1.250rem 1.500rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    margin: 3rem 0;
+
+}
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+
 header {
     background-color: rgba(255, 144, 14, 0.10);
     padding: 3.125rem 15rem;
-    
+
 }
 
 nav {
@@ -18,13 +42,10 @@ nav {
     text-align: center;
 }
 
-.nav-title {
-    font-weight: 700;
-}
 
 nav>ul {
     display: flex;
-   
+
 }
 
 nav ul li {
@@ -53,36 +74,57 @@ nav ul li a {
 
 }
 
-.banner-descriptin {
-    font-size: 1rem;
-    color: #727272;
-}
 
-.btn-primary {
-    width: 11.25rem;
-    height: 4rem;
-    border-radius: 0.500rem;
-    background: #FF900E;
-    color: #FFF;
-    padding: 1.250rem 1.500rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 0;
-    margin: 3rem 0;
 
-}
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
 
+/* main section  */
+
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+    background-color: #FFF;
+}
+
+.tems-container {
+    display: flex;
+    align-items: center;
+}
+
+.tems-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
 
 
+.tems-content {
+    padding-right: 70px;
+    padding-left: 70px;
 
+}
 
+.tems-title {
+    color: #FF900E;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
 
+.tems2 {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8125rem;
+}
 
-
-
+.tems-description {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    
+}
 
 
 
@@ -92,26 +134,50 @@ nav ul li a {
 /* responsive section  */
 /* mobile device */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav,
+    .tems-container {
         flex-direction: column;
     }
-    nav ul li a{
-     gap: 5px;
-    
+
+    nav ul li a {
+        gap: 5px;
+
     }
+
+    /* main section  */
+
+    .tems-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tems-content {
+        padding: 30px;
+    }
+
+
 }
+
 /* tablete device  */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav{
+
+    nav,
+    .tems-container {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 50px;
     }
-   nav > ul{
-    margin: 0 auto;
-   }
+
+    nav>ul {
+        margin: 0 auto;
+    }
+
+    .tems-content {
+       padding: 20px;
+    }
 }
