@@ -134,7 +134,10 @@ main {
     justify-content: space-around;
     padding: 5rem 0;
 }
-
+.facts-content{
+    width: 542px;
+    padding: 20px;
+}
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
@@ -143,7 +146,6 @@ main {
 }
 
 .facts-description {
-    width: 33rem;
     color: #727272;
 }
 
@@ -184,6 +186,33 @@ font-weight: 400;
  display: flex;
  justify-content: space-around;   
 }
+
+
+
+/* footer section  */
+.footer-description{
+    max-width: 1440px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+     margin: 0 auto;
+     color: #424242;
+     padding: 2.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive section  */
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -193,10 +222,20 @@ font-weight: 400;
 
     nav,
     .tems-container,
+    .sponsor-img-container,
     .facts-card-container {
         flex-direction: column;
     }
-
+    .sponsor-img-container{
+        padding: 20px;
+    }
+.sponsor-img-container img{
+    width: 100%;
+    padding: 2rem 0;
+}
+.footer-description{
+    padding: 0 10px;
+}
     nav ul li a {
         gap: 5px;
 
@@ -218,7 +257,12 @@ font-weight: 400;
         gap: 20px;
     }
 
-
+    .sponsor-content{
+        width: auto;
+    }
+.facts-content{
+    width: auto;
+}
 }
 
 /* tablete device  */
