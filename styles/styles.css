@@ -87,3 +87,31 @@ nav ul li a {
 
 
 
+
+
+/* responsive section  */
+/* mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul li a{
+     gap: 5px;
+    
+    }
+}
+/* tablete device  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
+   nav > ul{
+    margin: 0 auto;
+   }
+}
